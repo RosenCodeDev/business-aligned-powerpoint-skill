@@ -38,9 +38,11 @@ pwsh ./scripts/validate-and-package.ps1
 
 The release archive is written to `dist/deck-builder.zip`.
 
-The GitHub Actions workflow runs the same validation and packaging command on
+The validation workflow runs the same validation and packaging command on
 pushes, pull requests, and manual dispatches, and uploads the ZIP as a workflow
-artifact.
+artifact. Pushing a version tag such as `v1.0.0` runs the release workflow,
+revalidates the package, and publishes `deck-builder.zip` as a GitHub Release
+asset.
 
 ## Rights and portability
 

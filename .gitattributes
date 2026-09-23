@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+*.pptx -text
+*.zip -text
+*.bin -text
+*.ttf -text
+*.otf -text
+*.woff -text
+*.woff2 -text

@@ -16,6 +16,12 @@ ADAPTER = SKILL / "scripts" / "runtime_adapter.py"
 
 
 class PackageTests(unittest.TestCase):
+    def test_exact_knowledge_files_are_lf_normalized(self) -> None:
+        knowledge = SKILL / "references" / "original_knowledge"
+        for path in knowledge.glob("*.md"):
+            with self.subTest(path=path.name):
+                self.assertNotIn(b"\r\n", path.read_bytes())
+
     def test_package_validator(self) -> None:
         result = subprocess.run(
             [sys.executable, str(ROOT / "scripts" / "validate_package.py")],
