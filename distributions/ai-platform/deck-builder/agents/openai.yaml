@@ -1,0 +1,7 @@
+interface:
+  display_name: "Deck Builder"
+  short_description: "Build template-native Oliver Wyman PowerPoint decks"
+  default_prompt: "Use $deck-builder to plan and build an executive PowerPoint deck from my topic or source materials."
+policy:
+  allow_implicit_invocation: true
+

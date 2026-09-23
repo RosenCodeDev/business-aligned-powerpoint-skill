@@ -1,0 +1,6 @@
+.deck-builder-work/
+.pytest_cache/
+__pycache__/
+*.pyc
+dist/
+

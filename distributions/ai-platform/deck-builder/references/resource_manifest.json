@@ -1,0 +1,25 @@
+{
+  "runtime_version": "2.6.18",
+  "runtime_archive": {
+    "path": "assets/deck_system_runtime_clean.zip",
+    "sha256": "c595e17c097d16aa33880193fceec3928e7a08cfcca603ffa82f0a03a2f7663d",
+    "provenance": "exact original"
+  },
+  "knowledge_files": {
+    "references/original_knowledge/01_readme_deck_system.md": "d8560170800b7e1834b294d6729563eb0ef73b8c5426e5a1829436a3c9998828",
+    "references/original_knowledge/02_runtime_bootstrap.md": "a592b8155294704803c64c5e7e4762e224643bdf6868d2783c9db8de22c741f7",
+    "references/original_knowledge/11_presentation_standards.md": "81f5396f5b98f8c47093a5259686b61d80aa97a721bf02d51116b4bddd3c8a86",
+    "references/original_knowledge/12_brand_guidelines.md": "5844ea3f02255509bad92b3a579a9d1ed3f971fdfc8316816c71afe505ae348c",
+    "references/original_knowledge/13_intent_modes.md": "2709ff2ccaecf9de10d5eef4957997471ce1591f8463bf54fe6c8fdadbcefa86",
+    "references/original_knowledge/14_content_structures.md": "756bd2b053f02dfb13874540f1e433e947a5028aaafe3515f1cfdabf853d1f0f",
+    "references/original_knowledge/15_storyline_logic.md": "0d7adc5a55de050ac7f3e9ee09e146be693f94834462d36c95da128dc18bb678",
+    "references/original_knowledge/16_deck_spec_authoring.md": "b8c5c3ff311fe549cefd1ce37ad831cab0e9b254be490fbdf139736491da05f2",
+    "references/original_knowledge/20_slide_design_capability_map.md": "122fbfb0d9ddb0f46829756441dcd290b91d3d519056944c36498b774d765934",
+    "references/original_knowledge/21_slide_design_selection_guide.md": "354b9be2abe21ee48f3a9aa6c17b53f139cc8dba381d2fa1fd77f5fd194dc8be",
+    "references/original_knowledge/22_experiences.md": "5caaf20bea8417dececde185f3980df7126b5491977541e6845cc5943fbcb87b",
+    "references/original_knowledge/23_icon_index.md": "b681eb802a247910ae89c4886156a33a0f9766f3a88ea4fabaf33f46feee115d",
+    "references/original_knowledge/50_design_system.md": "31142ec472eef1df0edef3a9e46ad0b25e83e84d5eb45c13fcb003e1484bf63f",
+    "references/original_knowledge/60_voice_system.md": "b360dd0edc699db9ae56f783d69224043cfee79cf2415a37784ab6d32c768603"
+  }
+}
+

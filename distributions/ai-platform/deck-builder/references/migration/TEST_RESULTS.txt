@@ -1,0 +1,97 @@
+Runtime verification test results
+=================================
+
+Runtime under test
+------------------
+Source archive in previous migration package:
+  /mnt/data/deck-builder-migration/assets/deck_system_runtime_clean.zip
+
+SHA-256:
+  c595e17c097d16aa33880193fceec3928e7a08cfcca603ffa82f0a03a2f7663d
+
+Byte-for-byte comparison against the currently available original:
+  /mnt/data/deck_system_runtime_clean.zip
+Result:
+  IDENTICAL (same size 1,267,729 bytes; same SHA-256)
+
+Extraction used for test execution:
+  /mnt/data/verify_runtime
+
+Runtime version:
+  2.6.18
+
+Environment
+-----------
+OS:
+  Linux 6.18.44 x86_64, glibc 2.41
+Python:
+  3.13.5 (GCC 14.2.0)
+Python executable:
+  /opt/pyvenv/bin/python
+
+Installed dependency versions observed in the test environment:
+  python-pptx 1.0.2
+  lxml 6.1.1
+  Pillow 12.3.0
+  pytest 9.0.2
+  openpyxl 3.1.5
+  fonttools 4.63.0
+  PyYAML 6.0.3
+  svgelements: no installed distribution detected; runtime contains vendored source reporting VERSION 1.9.6
+
+Complete bundled suite execution
+--------------------------------
+Working directory:
+  /mnt/data/verify_runtime
+
+Exact command:
+  OAI_IS_JUPYTER_KERNEL=0 PYTHONPATH=/mnt/data/verify_runtime/src /opt/pyvenv/bin/python -m pytest tests -q --color=no
+
+Why OAI_IS_JUPYTER_KERNEL=0 was set:
+  This host injects an unrelated sitecustomize hook that tries to warm a spreadsheet
+  artifact daemon in every child Python process. The first verification attempt hit
+  the host's execution ceiling while that unrelated warm-up ran. Setting this host-
+  specific variable to 0 suppresses that warm-up. It is not a runtime requirement
+  and does not alter the deck-builder source or tests.
+
+Return code:
+  0
+
+Observed wall-clock duration:
+  43.975 seconds
+
+Pytest-reported duration:
+  41.50 seconds
+
+Passed:
+  174
+
+Failed:
+  0
+
+Skipped:
+  1
+
+Errors:
+  0
+
+Full pytest output:
+........................................................................ [ 41%]
+.................................................................s...... [ 82%]
+...............................                                          [100%]
+174 passed, 1 skipped in 41.50s
+
+Skip detail verification
+------------------------
+Exact command:
+  OAI_IS_JUPYTER_KERNEL=0 PYTHONPATH=/mnt/data/verify_runtime/src /opt/pyvenv/bin/python -m pytest tests/test_intents_and_invariants.py -q -rs --color=no
+
+Observed output:
+............................s................                            [100%]
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_intents_and_invariants.py:131: README_deck_system.md not present in this layout
+44 passed, 1 skipped in 5.57s
+
+Failure details
+---------------
+None. No bundled test failed in the complete suite execution.
